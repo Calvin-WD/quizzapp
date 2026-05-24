@@ -1,0 +1,40 @@
+body {
+  height: 100dvh;
+}
+
+/* .card__container > .card {
+  background-image: url(./asset/brainbg.jpg);
+  background-position: center;
+  border-radius: 0 0.375rem 0.375rem 0;
+} */
+
+.bg-custom {
+  background-color: rgb(39, 52, 92);
+}
+
+.nav-link {
+  opacity: 0.75;
+
+  border-left: 4px solid transparent;
+}
+
+.nav-link:hover {
+  opacity: 1;
+
+  border-left-color: white;
+}
+
+.answer-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background-color: rgb(214,214,214);
+}
+
+.question-footer {
+  
+}

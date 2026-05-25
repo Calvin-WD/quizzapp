@@ -34,47 +34,49 @@ function getNavBarTemplate() {
 
 function getQuestionsBodyTemplate() {
   return (
-    `<section id="questions-body" class="card-body">
-      <h5 class="card-title text-center">Frage</h5>
-      <div class="card mb-4">
-        <div class="card-body d-flex gap-3">
-          <div class="answer-badge">
-            <b>A</b>
+    `<div class="card rounded-start-0" style="width: 25rem">
+      <div class="card-body">
+        <h5 class="card-title text-center">Frage</h5>
+        <div class="card mb-4">
+          <div class="card-body d-flex gap-3">
+            <div class="answer-badge">
+              <b>A</b>
+            </div>
+            <div>Antwort</div>
           </div>
-          <div>Antwort</div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body d-flex gap-3">
+            <div class="answer-badge">
+              <b>B</b>
+            </div>
+            <div>Antwort</div>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body d-flex gap-3">
+            <div class="answer-badge">
+              <b>C</b>
+            </div>
+            <div>Antwort</div>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body d-flex gap-3">
+            <div class="answer-badge">
+              <b>D</b>
+            </div>
+            <div>Antwort</div>
+          </div>
         </div>
       </div>
-      <div class="card mb-4">
-        <div class="card-body d-flex gap-3">
-          <div class="answer-badge">
-            <b>B</b>
-          </div>
-          <div>Antwort</div>
-        </div>
-      </div>
-      <div class="card mb-4">
-        <div class="card-body d-flex gap-3">
-          <div class="answer-badge">
-            <b>C</b>
-          </div>
-          <div>Antwort</div>
-        </div>
-      </div>
-      <div class="card mb-4">
-        <div class="card-body d-flex gap-3">
-          <div class="answer-badge">
-            <b>D</b>
-          </div>
-          <div>Antwort</div>
-        </div>
-      </div>
-    </section>
-    ${getQuestionsFooterTemplate}`
+      ${getQuestionsFooterTemplate()}
+    </div>`
   );
 }
 
 function getQuestionsFooterTemplate() {
-  return `<footer id="questions-footer" class="container-fluid d-flex justify-content-center pb-3">
+  return `<footer class="container-fluid d-flex justify-content-center pb-3">
           <button type="button" class="btn btn-primary rounded-pill"><b><</b></button>
           <div class="container-fluid d-flex justify-content-around align-items-center">
             <b>1.</b> von <b>5</b> Fragen

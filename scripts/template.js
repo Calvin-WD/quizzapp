@@ -32,7 +32,7 @@ function getNavBarTemplate() {
     </nav>`;
 }
 
-function getQuestionsBodyTemplate() {
+function getQuestionsBodyTemplate(questionsCat) {
   return (
     `<div class="card rounded-start-0" style="width: 25rem">
       <div class="card-body">
@@ -70,16 +70,16 @@ function getQuestionsBodyTemplate() {
           </div>
         </div>
       </div>
-      ${getQuestionsFooterTemplate()}
+      ${getQuestionsFooterTemplate(questionsCat)}
     </div>`
   );
 }
 
-function getQuestionsFooterTemplate() {
+function getQuestionsFooterTemplate(questionsCat) {
   return `<footer class="container-fluid d-flex justify-content-center pb-3">
           <button type="button" class="btn btn-primary rounded-pill"><b><</b></button>
-          <div class="container-fluid d-flex justify-content-around align-items-center">
-            <b>1.</b> von <b>5</b> Fragen
+          <div class="container-fluid d-flex justify-content-center align-items-center gap-2">
+            <b>1.</b> von <b id="categorie-question-amount">${questionsCat.length}</b> Fragen
           </div>
           <button type="button" class="btn btn-primary rounded-pill"><b>></b></button>
         </footer>`;

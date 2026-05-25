@@ -18,7 +18,8 @@ body {
   border-left: 4px solid transparent;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   opacity: 1;
 
   border-left-color: white;

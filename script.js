@@ -5,14 +5,22 @@ function init() {
 function renderApp() {
   const containerAppRef = document.getElementById("container-quizapp");
 
-  containerAppRef.innerHTML = getNavBarTemplate();
-  containerAppRef.innerHTML += getQuestionsHtmlString();
+  renderNavBar(containerAppRef);
+  renderQuestionBody(containerAppRef)
 }
 
-function getQuestionsHtmlString() {
+function renderNavBar(containerAppRef) {
+containerAppRef.innerHTML = getNavBarTemplate();
+}
+
+function renderQuestionBody(containerAppRef) {
+containerAppRef.innerHTML += getQuestionsHtmlString(questions.html);
+}
+
+function getQuestionsHtmlString(questionsCat) {
   let questionsHtmlString = "";
 
-  questionsHtmlString += getQuestionsBodyTemplate();
+  questionsHtmlString += getQuestionsBodyTemplate(questionsCat);
 
   return questionsHtmlString;
 }

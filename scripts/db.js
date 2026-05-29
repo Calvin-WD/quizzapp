@@ -9,12 +9,12 @@ let questions = {
       "answer-correkt": 2,
     },
     {
-      question: "Welches Element wird für die wichtigste (größte) Überschrift verwendet?",
-      "answer-1": "<header>",
-      "answer-2": "<heading>",
-      "answer-3": "<h6>",
-      "answer-4": "<h1>",
-      "answer-correkt": 4,
+      question: "Welches HTML-Attribut wird verwendet, um die Zieladresse eines Links (<a>-Tag) anzugeben?",
+      "answer-1": "src",
+      "answer-2": "href",
+      "answer-3": "link",
+      "answer-4": "url",
+      "answer-correkt": 2,
     },
     {
       question:

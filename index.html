@@ -12,23 +12,26 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/standard.css" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
   </head>
   <body
     onload="init()"
-    class="container-fluid d-flex flex-column justify-content-center align-items-center text-bg-secondary"
+    class="container-fluid d-flex flex-column justify-content-center align-items-center p-0 text-bg-secondary"
   >
+    <div class="progress w-100 rounded-0" role="progressbar">
+      <div id="progress-bar" class="progress-bar bg-custom" style="width: 0%;"></div>
+    </div>
     <h1>QuizzApp</h1>
     <section id="container-quizapp" class="container d-flex justify-content-center">
+      <nav id="container-questionHeader" class="navbar d-flex bg-custom rounded-start"></nav>
+      <main id="container-questionBody"></main>
     </section>
-    <!-- Bootstrap JavaScript -->
-    <script src="./script.js"></script>
-    <script src="./scripts/template.js"></script>
     <script src="./scripts/db.js"></script>
+    <script src="./scripts/template.js"></script>
+    <script src="./script.js"></script>
+    <!-- Bootstrap JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
